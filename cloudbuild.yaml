@@ -3,12 +3,12 @@
 
 substitutions:
   _PROJECT_ID: 'upgradlabs-1692848596872'  # Replace with your actual project ID.
-  _IMAGE_NAME: 'gcr.io/$PROJECT_ID/my-app'
+  _IMAGE_NAME: 'gcr.io/${_PROJECT_ID}/my-app'
   _TAG_NAME: '0.0.1'
 
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', '$_IMAGE_NAME:$_TAG_NAME', '.']
+  args: ['build', '-t', '${_IMAGE_NAME}:${_TAG_NAME}', '.']
 
 images:
-- '$_IMAGE_NAME:$_TAG_NAME'  # Reference the dynamic image name and tag.
+- '${_IMAGE_NAME}:${_TAG_NAME}'  # Reference the dynamic image name and tag.
