@@ -3,7 +3,7 @@
 substitutions:
   _PROJECT_ID: 'upgradlabs-1695429666985'  # Replace with your actual project ID.
   _IMAGE_NAME: 'gcr.io/${_PROJECT_ID}/my-app'
-  _TAG_NAME: '0.0.4'
+  _TAG_NAME: '0.0.5'
   _REGION: 'us-central1'  # Replace with your preferred region.
   _SERVICE_NAME: 'my-cloud-run-service'  # Replace with your preferred Cloud Run service name.
 
