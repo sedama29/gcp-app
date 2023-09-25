@@ -26,7 +26,7 @@ steps:
   - '--platform=managed'
   - '--region=${_REGION}'
   - '--allow-unauthenticated'  # Optional: Remove this line if you don't want to allow unauthenticated access.
-  - '--service-account=454262640948@cloudbuild.gserviceaccount.com'
+ # - '--service-account=454262640948@cloudbuild.gserviceaccount.com'
 
 
 images:
